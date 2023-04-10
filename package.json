@@ -1,0 +1,24 @@
+{
+  "name": "waxcrawler",
+  "version": "1.0.0",
+  "description": "Explore the blockchain",
+  "main": "index.js",
+  "scripts": {
+    "mainnet": "env-cmd -r ./.env -e MAINNET nodemon ./index.js",
+    "testnet": "env-cmd -r ./.env -e TESTNET nodemon ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "MarcosDK - 3DK Render",
+  "license": "MIT",
+  "dependencies": {
+    "enf-eosjs": "^23.0.0-rc4",
+    "env-cmd": "^10.1.0",
+    "node-fetch": "^2.6.6",
+    "nodemon": "^2.0.21",
+    "pg": "^8.9.0",
+    "text-encoding": "^0.7.0",
+    "ws": "^8.12.1",
+    "zlib": "^1.0.5"
+  }
+}
